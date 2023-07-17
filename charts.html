@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Charts</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="navigation">
+            <div id="option1"><a class="text_decoration" href="index.html">Home</a></div>
+            <div id="option2"><a class="text_decoration" href="document.html">Documents</a></div>
+            <div id="option3"><a class="text_decoration" href="charts.html">Charts</a></div>
+        </div>
+
+        <div id="main_container">
+            <div id="chart_container">
+                <div id="change_chart">
+                    <div id="show_bar_chart" onclick="bar_chart();">
+                        <a href="#">BAR CHART</a>
+                    </div>
+                    <div id="show_pie_chart" onclick="pie_chart();">
+                        <a href="#">PIE CHART</a>
+                    </div>
+                    <div id="show_line_chart" onclick="line_chart();">
+                        <a href="#">LINE CHART</a>
+                    </div>
+                </div>
+                <canvas id="bar_chart"></canvas>
+                <canvas id="pie_chart"></canvas>
+                <canvas id="line_chart"></canvas>
+            </div>
+        </div>
+
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js">
+        </script>
+
+        <script src="javascript.js"></script>
+
+    </body>
+</html>
